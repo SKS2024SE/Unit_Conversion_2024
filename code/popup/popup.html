@@ -16,9 +16,9 @@
   <title>Convertor - popup</title>
 </head>
 <body>
-  <button id="darkModeToggle">🌙Dark Mode</button>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
-  <script src="../main_scripts/dark-mode.js"></script>
+  <!-- <button id="darkModeToggle">🌙Dark Mode</button> -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+  <!-- <script src="../main_scripts/dark-mode.js"></script> -->
   
   <div class="Tab">
     <button class="tablinks selected"><span>Convertor</span></button>
@@ -39,18 +39,33 @@
             </div>
             <div class="unit_container">
               <div class="unit">
-                <input type="number" id="left_input" name="right_input" value="0"/>
+                <input type="number" id="left_input" name="right_input" value="0" />
+                <button id="voice_input_left" style="margin-left: 10px;">🎤</button>
                 <select id="unit_selector_left" class="selector" name="left_unit">
                   <option>Please Select Type</option>
                 </select>
               </div>
+              <!-- <div class="unit">
+                <input type="number" id="left_input" name="right_input" value="0"/>
+                <select id="unit_selector_left" class="selector" name="left_unit">
+                  <option>Please Select Type</option>
+                </select>
+              </div> -->
               <div style="font-size: 30px;">=</div>
               <div class="unit">
-                <input type="number" id="right_input" name="left_input" value="0"/>
+                <input type="number" id="right_input" name="left_input" value="0" />
+                <button id="voice_input_right" style="margin-left: 10px;">🎤</button>
                 <select id="unit_selector_right" class="selector" name="right_unit">
                   <option>Please Select Type</option>
                 </select>
               </div>
+              
+              <!-- <div class="unit">
+                <input type="number" id="right_input" name="left_input" value="0"/>
+                <select id="unit_selector_right" class="selector" name="right_unit">
+                  <option>Please Select Type</option>
+                </select>
+              </div> -->
             </div>
         </div>
       </div>
@@ -207,110 +222,37 @@
       </div>
       </div>
 
-      <!-- <div class="Calculator tab_container" style="display: none;">
-        <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
-        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-            <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-                <option value="kmh_to_ms">km/h to m/s</option>
-                <option value="ms_to_kmh">m/s to km/h</option>
-                <option value="f_to_c">Fahrenheit to Celsius</option>
-                <option value="c_to_f">Celsius to Fahrenheit</option>
-                <option value="mph_to_kmh">mph to km/h</option>
-            </select>
-        </div>
-        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-            <input 
-                type="number" 
-                id="input-value" 
-                placeholder="Enter value" 
-                style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
-            <button 
-                id="convert-btn" 
-                style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                Convert
-            </button>
-        </div>
-        <div class="result_container" style="display: flex; justify-content: center; margin-top: 20px;">
-            <div class="result_subcontainer" style="text-align: center;">
-                <div class="result_field" style="margin-bottom: 10px;">
-                    <label style="font-weight: bold; font-size: 16px;">Result:</label>
-                    <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-                </div>
-                <div class="unit_range" style="color: #666; font-size: 14px; margin-top: 10px;">
-                    (Make sure units are correct for conversion)
-                </div>
-            </div>
-        </div>
-        <script src="../conversions/compound_conversion.js"></script>
-    </div> -->
-    <!-- <div class="Calculator tab_container" style="display: block;">
-      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Compound Conversions</h1>
-  
-    
-      <select id="conversion-category">
-          <option value="areaVolume">Area and Volume</option>
-          <option value="speed">Speed</option>
-          <option value="engineering">Engineering</option>
+  <div class="Calculator tab_container" style="display: none;">
+    <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
+
+    <!-- Conversion Category Dropdown -->
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <select id="conversion-category" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+        <option value="areaVolume">Area and Volume</option>
+        <option value="speed">Speed</option>
+        <option value="engineering">Engineering</option>
       </select>
-  
-      Conversion Type Dropdown
-      <div style="margin-top: 15px;">
-          <select id="conversion-type">
-              Default values loaded by JS
-          </select>
-      </div>
-  
-      Input and Convert Button
-      <div style="margin-top: 15px;">
-          <input type="number" id="input-value" placeholder="Enter value" style="padding: 8px; width: 200px;">
-          <button id="convert-btn" style="padding: 8px 20px; margin-left: 10px; background-color: var(--highlight-color); color: #fff; border: none; cursor: pointer;">Convert</button>
-      </div>
-  
-      Result Display
-      <div class="result_container" style="display: flex; justify-content: center; margin-top: 20px;">
-        <div class="result_subcontainer" style="text-align: center;">
-            <div class="result_field" style="margin-bottom: 10px;">
-                <label style="font-weight: bold; font-size: 16px;">Result:</label>
-                <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-            </div>
-            <div class="unit_range" style="color: #666; font-size: 14px; margin-top: 10px;">
-                (Make sure units are correct for conversion)
-            </div>
-        </div>
     </div>
-  </div> 
--->
-<div class="Calculator tab_container" style="display: none;">
-  <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
 
-  <!-- Conversion Category Dropdown -->
-  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-    <select id="conversion-category" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-      <option value="areaVolume">Area and Volume</option>
-      <option value="speed">Speed</option>
-      <option value="engineering">Engineering</option>
-    </select>
-  </div>
+    <!-- Conversion Type Dropdown -->
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+        <!-- Options will be dynamically populated by JavaScript -->
+      </select>
+    </div>
 
-  <!-- Conversion Type Dropdown -->
-  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-    <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-      <!-- Options will be dynamically populated by JavaScript -->
-    </select>
-  </div>
-
-  <!-- Input and Convert Button -->
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-    <input 
-      type="number" 
-      id="input-value" 
-      placeholder="Enter value" 
-      style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
-    <button 
-      id="convert-btn" 
-      style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-      Convert
-    </button>
+    <!-- Input and Convert Button -->
+    <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
+      <input 
+        type="number" 
+        id="input-value" 
+        placeholder="Enter value" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
+      <button 
+        id="convert-btn" 
+        style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+        Convert
+      </button>
   </div>
 
   <!-- Result Display -->
@@ -318,7 +260,7 @@
     <div class="result-subcontainer" style="text-align: center;">
       <div class="result-field" style="margin-bottom: 10px;">
         <label style="font-weight: bold; font-size: 16px;">Result:</label>
-        <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+        <span id="result" class="result" style="font-size: 16px; margin-left: 10px;"></span>
       </div>
       <div class="unit-range" style="color: #666; font-size: 14px; margin-top: 10px;">
         (Ensure correct units are used for conversion)

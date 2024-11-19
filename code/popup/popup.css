@@ -1,3 +1,35 @@
+
+/* Default (Light Mode) 
+body {
+    --background-color: #ffffff;
+    --font-color: #333333;
+    --highlight-color: #0078d7;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --background-color: #121212; /* Dark background */
+    --font-color: #e0e0e0; /* Light text */
+    --highlight-color: #bb86fc; /* Highlight color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+button, input, .unit, .viewAllButton {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border: 1px solid var(--highlight-color);
+}
+
+button:hover, .viewAllButton:hover {
+    background-color: var(--highlight-color);
+    color: #fff; /* Ensure high contrast */
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif; /* Default font family */
