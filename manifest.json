@@ -15,7 +15,7 @@
 		"default_popup":"code/popup/popup.html"
 	},
 	"host_permissions": ["<all_urls>"],
-	"permissions": ["storage"],
+	"permissions": ["storage", "activeTab", "scripting"],
 	"minimum_chrome_version": "14",
 	"content_scripts": [
 		{
@@ -30,7 +30,8 @@
 				"code/conversions/conversion.js",
 				"code/conversions/Temperature.js",
 				"code/conversions/Currency.js",
-				"code/conversions/TimeZone.js"
+				"code/conversions/TimeZone.js",
+				"code/conversions/translator.js"
 			],
 			"run_at": "document_end",
 			"all_frames": true,

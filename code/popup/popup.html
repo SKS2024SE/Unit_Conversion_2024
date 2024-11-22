@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+
 <head>
   <link href="./popup.css" rel="stylesheet" type="text/css" />
   <meta charset="UTF-8">
   <script type="text/javascript" src="../main_scripts/units_objects.js"></script>
   <script type="text/javascript" src="../main_scripts/utility.js"></script>
-	<script type="text/javascript" src="../main_scripts/custom_units.js"></script>
-	<script type="text/javascript" src="../conversions/conversion.js"></script>
-	<script type="text/javascript" src="../conversions/Temperature.js"></script>
-	<script type="text/javascript" src="../conversions/Currency.js"></script>
+  <script type="text/javascript" src="../main_scripts/custom_units.js"></script>
+  <script type="text/javascript" src="../conversions/conversion.js"></script>
+  <script type="text/javascript" src="../conversions/Temperature.js"></script>
+  <script type="text/javascript" src="../conversions/Currency.js"></script>
+  <script type="text/javascript" src="../conversions/translator.js"></script>
   <script type="text/javascript" src="../main_scripts/popular_units.js"></script>
   <script type="text/javascript" src="../main_scripts/parser_script.js"></script>
   <script type="text/javascript" src="./js/jquery/jquery-3.7.1.min.js"></script>
@@ -15,199 +17,204 @@
   <script src="./compound_conversion.js"></script>
   <title>Convertor - popup</title>
 </head>
+
 <body>
   <button id="darkModeToggle">🌙Dark Mode</button>
   <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
   <script src="../main_scripts/dark-mode.js"></script>
-  
+
   <div class="Tab">
     <button class="tablinks selected"><span>Convertor</span></button>
-    <button class="tablinks" ><span>Custom</span></button>
-    <button class="tablinks" ><span>Favourite</span></button>
+    <button class="tablinks"><span>Custom</span></button>
+    <button class="tablinks"><span>Favourite</span></button>
     <button class="tablinks"><span>Statistics</span></button>
-    <button class="tablinks" ><span>Health </span></button>
+    <button class="tablinks"><span>Health </span></button>
     <button class="tablinks"><span>Calculator</span></button>
+    <button class="tablinks"><span>Translate</span></button>
   </div>
 
   <div class="main_container">
-      <div class="Convertor tab_container">
+    <div class="Convertor tab_container">
       <h1 style="text-align: center;">Convertor</h1>
-        <div class="input_container">
-            <div class="type_container">
-                <select id="type_selector" class="selector">
-                </select>
-            </div>
-            <div class="unit_container">
-              <div class="unit">
-                <input type="number" id="left_input" name="right_input" value="0"/>
-                <select id="unit_selector_left" class="selector" name="left_unit">
-                  <option>Please Select Type</option>
-                </select>
-              </div>
-              <div style="font-size: 30px;">=</div>
-              <div class="unit">
-                <input type="number" id="right_input" name="left_input" value="0"/>
-                <select id="unit_selector_right" class="selector" name="right_unit">
-                  <option>Please Select Type</option>
-                </select>
-              </div>
-            </div>
-        </div>
-      </div>
-
-      
-      <div class="Custom tab_container" style="display: none;">
-        <h1 style="text-align: center;">Custom</h1>
+      <div class="input_container">
         <div class="type_container">
-          <select id="custom_type_selector" class="selector">
+          <select id="type_selector" class="selector">
           </select>
         </div>
-        <div>
-          <div class="unit_container">
-            <div style="font-size: 16px;
+        <div class="unit_container">
+          <div class="unit">
+            <input type="number" id="left_input" name="right_input" value="0" />
+            <select id="unit_selector_left" class="selector" name="left_unit">
+              <option>Please Select Type</option>
+            </select>
+          </div>
+          <div style="font-size: 30px;">=</div>
+          <div class="unit">
+            <input type="number" id="right_input" name="left_input" value="0" />
+            <select id="unit_selector_right" class="selector" name="right_unit">
+              <option>Please Select Type</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Custom tab_container" style="display: none;">
+      <h1 style="text-align: center;">Custom</h1>
+      <div class="type_container">
+        <select id="custom_type_selector" class="selector">
+        </select>
+      </div>
+      <div>
+        <div class="unit_container">
+          <div style="font-size: 16px;
             text-align: center;
             border: none;
             outline: none;
             width: 100%;
             padding: 12px 0;">
-              <div><span>1</span>
-                <div id="custom_unit_base"></div>
-              </div>
+            <div><span>1</span>
+              <div id="custom_unit_base"></div>
             </div>
+          </div>
 
 
-            <div style="font-size: 30px;margin-top: 10px;">=</div>
-            <div class="unit" >
+          <div style="font-size: 30px;margin-top: 10px;">=</div>
+          <div class="unit">
 
-              <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="Unit value"/></div>
+            <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="Unit value" />
             </div>
-
-
           </div>
 
-     
-          <div class="unit_container" style="justify-content: center;"> 
-            <div class="unit"> <input style="font-size: 16px;" type="text" id="custom_unit_name_left" placeholder="Unit Name"/></div>
-          </div>
-          <div style="text-align: center;">
-            <button id="custom_unit_add" class="viewAllButton">Add</button>
-          </div>
+
         </div>
-        <br/>
-        <hr/>
-        <br/>
-        <div>
-          <div class="type_container">
-            <select id="delete_type_selector" class="selector">
-            </select>
-          </div>
-          <div style="text-align: center;">
-            <button id="custom_unit_delete" class="viewAllButton">Delete</button>
-          </div>
+
+
+        <div class="unit_container" style="justify-content: center;">
+          <div class="unit"> <input style="font-size: 16px;" type="text" id="custom_unit_name_left"
+              placeholder="Unit Name" /></div>
+        </div>
+        <div style="text-align: center;">
+          <button id="custom_unit_add" class="viewAllButton">Add</button>
         </div>
       </div>
-
-      <div class="Favourite tab_container" style="display: none;">
-        <h1 style="text-align: center;">Favourite</h1>
-          <div class="input_container">
-              <div class="type_container">
-                  <select id="favourite_type_selector" class="selector">
-                  </select>
-              </div>
-              <div class="units">
-                <ul id="units_container">
-
-                </ul>
-              </div>
-          </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <div class="type_container">
+          <select id="delete_type_selector" class="selector">
+          </select>
+        </div>
+        <div style="text-align: center;">
+          <button id="custom_unit_delete" class="viewAllButton">Delete</button>
+        </div>
       </div>
+    </div>
+
+    <div class="Favourite tab_container" style="display: none;">
+      <h1 style="text-align: center;">Favourite</h1>
+      <div class="input_container">
+        <div class="type_container">
+          <select id="favourite_type_selector" class="selector">
+          </select>
+        </div>
+        <div class="units">
+          <ul id="units_container">
+
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
-      <div class="Statistics tab_container" style="display: none;">
-        <h1 style="text-align: center;">Statistics</h1>
-        <div class="input_container">
-          <div class="data-input-section">
-            <label for="data_input">Input Data:</label>
-            <input 
-              type="text" 
-              id="data_input" 
-              class="stats-input"
-              placeholder="e.g., 1.2, 3.4, 5.6, 7.8"
-            />
-            <button id="calculate_statistics_btn" class="viewAllButton">Calculate</button>
+    <div class="Statistics tab_container" style="display: none;">
+      <h1 style="text-align: center;">Statistics</h1>
+      <div class="input_container">
+        <div class="data-input-section">
+          <label for="data_input">Input Data:</label>
+          <input type="text" id="data_input" class="stats-input" placeholder="e.g., 1.2, 3.4, 5.6, 7.8" />
+          <button id="calculate_statistics_btn" class="viewAllButton">Calculate</button>
+        </div>
+
+        <div class="stats-results">
+          <div class="stats-item">
+            <div class="stats-label">Mean:</div>
+            <input type="text" id="mean_output" class="stats-output" readonly>
           </div>
-          
-          <div class="stats-results">
-            <div class="stats-item">
-              <div class="stats-label">Mean:</div>
-              <input type="text" id="mean_output" class="stats-output" readonly>
-            </div>
-            
-            <div class="stats-item">
-              <div class="stats-label">Standard Deviation:</div>
-              <input type="text" id="std_output" class="stats-output" readonly>
-            </div>
-            
-            <div class="stats-item">
-              <div class="stats-label">Entropy:</div>
-              <input type="text" id="entropy_output" class="stats-output" readonly>
-            </div>
+
+          <div class="stats-item">
+            <div class="stats-label">Standard Deviation:</div>
+            <input type="text" id="std_output" class="stats-output" readonly>
+          </div>
+
+          <div class="stats-item">
+            <div class="stats-label">Entropy:</div>
+            <input type="text" id="entropy_output" class="stats-output" readonly>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="Health tab_container" style="display: none;">
-        <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Input</h1>
-        
-        <div class="input_subcontainer" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-          <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-              <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Weight (kg)</label>
-              <input type="number" id="weight" class="quantity" step="0.1" style="width: 80px; display: block; margin: 0 auto;">
+    <div class="Health tab_container" style="display: none;">
+      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Input</h1>
+
+      <div class="input_subcontainer" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+        <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Weight (kg)</label>
+          <input type="number" id="weight" class="quantity" step="0.1"
+            style="width: 80px; display: block; margin: 0 auto;">
+        </div>
+        <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Height (cm)</label>
+          <input type="number" id="height" class="quantity" step="0.1"
+            style="width: 80px; display: block; margin: 0 auto;">
+        </div>
+        <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Age</label>
+          <input type="number" id="age" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
+        </div>
+        <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Gender</label>
+          <select id="gender" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <h1 style="text-align: center; margin: 20px 0; font-weight: bold;">Health Index</h1>
+
+
+      <div class="result_container" style="display: flex; justify-content: center;">
+        <div class="result_subcontainer">
+          <div class="result_field" style="text-align: center; margin-bottom: 10px;">
+            <label style="font-weight: bold; font-size: 16px;"> BMI:</label>
+            <span id="bmi-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+            <span style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 18.5 - 24.9)</span>
           </div>
-          <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-              <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Height (cm)</label>
-              <input type="number" id="height" class="quantity" step="0.1" style="width: 80px; display: block; margin: 0 auto;">
+          <div class="result_field" style="text-align: center; margin-bottom: 10px;">
+            <label style="font-weight: bold; font-size: 16px;"> BMR:</label>
+            <span id="bmr-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 1500-2000
+              kcal/day)</span>
+            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal:
+              1200-1600 kcal/day)</span>
           </div>
-          <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-              <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Age</label>
-              <input type="number" id="age" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
-          </div>
-          <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-              <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Gender</label>
-              <select id="gender" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-              </select>
+          <div class="result_field" style="text-align: center; margin-bottom: 10px;">
+            <label style="font-weight: bold; font-size: 16px;"> TDEE:</label>
+            <span id="tdee-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 2000-2750
+              kcal/day)</span>
+            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal:
+              1600-2200 kcal/day)</span>
           </div>
         </div>
-    
-        <h1 style="text-align: center; margin: 20px 0; font-weight: bold;">Health Index</h1>
-
-  
-        <div class="result_container" style="display: flex; justify-content: center;">
-          <div class="result_subcontainer">
-              <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-                  <label style="font-weight: bold; font-size: 16px;"> BMI:</label>
-                  <span id="bmi-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-                  <span style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 18.5 - 24.9)</span>
-              </div>
-              <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-                  <label style="font-weight: bold; font-size: 16px;"> BMR:</label>
-                  <span id="bmr-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-                  <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 1500-2000 kcal/day)</span>
-                  <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal: 1200-1600 kcal/day)</span>
-              </div>
-              <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-                  <label style="font-weight: bold; font-size: 16px;"> TDEE:</label>
-                  <span id="tdee-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-                  <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 2000-2750 kcal/day)</span>
-                  <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal: 1600-2200 kcal/day)</span>
-              </div>
-          </div>
       </div>
-      </div>
+    </div>
 
-      <!-- <div class="Calculator tab_container" style="display: none;">
+    <!-- <div class="Calculator tab_container" style="display: none;">
         <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
         <div style="display: flex; justify-content: center; margin-bottom: 20px;">
             <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
@@ -280,61 +287,78 @@
     </div>
   </div> 
 -->
-<div class="Calculator tab_container" style="display: none;">
-  <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
+    <div class="Calculator tab_container" style="display: none;">
+      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
 
-  <!-- Conversion Category Dropdown -->
-  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-    <select id="conversion-category" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-      <option value="areaVolume">Area and Volume</option>
-      <option value="speed">Speed</option>
-      <option value="engineering">Engineering</option>
-    </select>
-  </div>
-
-  <!-- Conversion Type Dropdown -->
-  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-    <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-      <!-- Options will be dynamically populated by JavaScript -->
-    </select>
-  </div>
-
-  <!-- Input and Convert Button -->
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-    <input 
-      type="number" 
-      id="input-value" 
-      placeholder="Enter value" 
-      style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
-    <button 
-      id="convert-btn" 
-      style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-      Convert
-    </button>
-  </div>
-
-  <!-- Result Display -->
-  <div class="result-container" style="display: flex; justify-content: center; margin-top: 20px;">
-    <div class="result-subcontainer" style="text-align: center;">
-      <div class="result-field" style="margin-bottom: 10px;">
-        <label style="font-weight: bold; font-size: 16px;">Result:</label>
-        <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+      <!-- Conversion Category Dropdown -->
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <select id="conversion-category"
+          style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+          <option value="areaVolume">Area and Volume</option>
+          <option value="speed">Speed</option>
+          <option value="engineering">Engineering</option>
+        </select>
       </div>
-      <div class="unit-range" style="color: #666; font-size: 14px; margin-top: 10px;">
-        (Ensure correct units are used for conversion)
+
+      <!-- Conversion Type Dropdown -->
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <select id="conversion-type"
+          style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
+          <!-- Options will be dynamically populated by JavaScript -->
+        </select>
+      </div>
+
+      <!-- Input and Convert Button -->
+      <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
+        <input type="number" id="input-value" placeholder="Enter value"
+          style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
+        <button id="convert-btn"
+          style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+          Convert
+        </button>
+      </div>
+
+      <!-- Result Display -->
+      <div class="result-container" style="display: flex; justify-content: center; margin-top: 20px;">
+        <div class="result-subcontainer" style="text-align: center;">
+          <div class="result-field" style="margin-bottom: 10px;">
+            <label style="font-weight: bold; font-size: 16px;">Result:</label>
+            <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
+          </div>
+          <div class="unit-range" style="color: #666; font-size: 14px; margin-top: 10px;">
+            (Ensure correct units are used for conversion)
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  <script src="../conversions/compound_conversion.js"></script>
-           
-  <div class="colorblind-settings">
+
+    <div class="Translate tab_container" style="display: none;">
+      <textarea id="inputText" placeholder="Enter text here"></textarea>
+      <select id="currentLanguage">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+      </select>
+      <button id="translateButton">Translate</button>
+      <div id="result"></div>
+      <select id="targetLanguage">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+      </select>
+    </div>
+    <script src="../conversions/compound_conversion.js"></script>
+
+    <div class="colorblind-settings">
       <label for="colorblind-mode">Select Colorblind Mode:</label>
       <select id="colorblind-mode">
-          <option value="default">Default</option>
-          <option value="red-green">Red-Green Colorblind</option>
-          <option value="blue-yellow">Blue-Yellow Colorblind</option>
-          <option value="total-colorblind">Total Colorblind</option>
+        <option value="default">Default</option>
+        <option value="red-green">Red-Green Colorblind</option>
+        <option value="blue-yellow">Blue-Yellow Colorblind</option>
+        <option value="total-colorblind">Total Colorblind</option>
       </select>
+    </div>
   </div>
 </body>
