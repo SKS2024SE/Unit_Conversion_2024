@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <link href="./popup.css" rel="stylesheet" type="text/css" />
   <meta charset="UTF-8">
@@ -15,27 +15,30 @@
   <script type="text/javascript" src="./js/jquery/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="./js/popup.js"></script>
   <script src="./compound_conversion.js"></script>
-  <title>Convertor - popup</title>
+  <title data-i18n="innertext;title">__MSG_title__</title>
 </head>
 
 <body>
-  <button id="darkModeToggle">🌙Dark Mode</button>
+  <button id="darkModeToggle">
+    <span>🌙</span>
+    <span data-i18n="innertext;dark_mode">__MSG_dark_mode__</span>
+  </button>
   <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
   <script src="../main_scripts/dark-mode.js"></script>
 
   <div class="Tab">
-    <button class="tablinks selected"><span>Convertor</span></button>
-    <button class="tablinks"><span>Custom</span></button>
-    <button class="tablinks"><span>Favourite</span></button>
-    <button class="tablinks"><span>Statistics</span></button>
-    <button class="tablinks"><span>Health </span></button>
-    <button class="tablinks"><span>Calculator</span></button>
-    <button class="tablinks"><span>Translate</span></button>
+    <button class="tablinks selected"><span data-i18n="innertext;converter">__MSG_converter__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;custom">__MSG_custom__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;favorite">__MSG_favorite__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;statistics">__MSG_statistics__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;health">__MSG_health__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;calculator">__MSG_calculator__</span></button>
+    <button class="tablinks"><span data-i18n="innertext;translate">__MSG_translate__</span></button>
   </div>
 
   <div class="main_container">
     <div class="Convertor tab_container">
-      <h1 style="text-align: center;">Convertor</h1>
+      <h1 style="text-align: center;"><span data-i18n="innertext;converter">__MSG_convertor__</span></h1>
       <div class="input_container">
         <div class="type_container">
           <select id="type_selector" class="selector">
@@ -45,14 +48,14 @@
           <div class="unit">
             <input type="number" id="left_input" name="right_input" value="0" />
             <select id="unit_selector_left" class="selector" name="left_unit">
-              <option>Please Select Type</option>
+              <option data-i18n="innertext;type_selection">__MSG_type_selection__</option>
             </select>
           </div>
           <div style="font-size: 30px;">=</div>
           <div class="unit">
             <input type="number" id="right_input" name="left_input" value="0" />
             <select id="unit_selector_right" class="selector" name="right_unit">
-              <option>Please Select Type</option>
+              <option data-i18n="innertext;type_selection">__MSG_type_selection__</option>
             </select>
           </div>
         </div>
@@ -61,7 +64,7 @@
 
 
     <div class="Custom tab_container" style="display: none;">
-      <h1 style="text-align: center;">Custom</h1>
+      <h1 style="text-align: center;"><span data-i18n="innertext;custom">__MSG_custom__</span></h1>
       <div class="type_container">
         <select id="custom_type_selector" class="selector">
         </select>
@@ -96,7 +99,7 @@
               placeholder="Unit Name" /></div>
         </div>
         <div style="text-align: center;">
-          <button id="custom_unit_add" class="viewAllButton">Add</button>
+          <button id="custom_unit_add" class="viewAllButton"><span data-i18n="innertext;add">__MSG_add__</span></button>
         </div>
       </div>
       <br />
@@ -108,13 +111,13 @@
           </select>
         </div>
         <div style="text-align: center;">
-          <button id="custom_unit_delete" class="viewAllButton">Delete</button>
+          <button id="custom_unit_delete" class="viewAllButton"><span data-i18n="innertext;delete">__MSG_delete__</span></button>
         </div>
       </div>
     </div>
 
     <div class="Favourite tab_container" style="display: none;">
-      <h1 style="text-align: center;">Favourite</h1>
+      <h1 style="text-align: center;"><span data-i18n="innertext;favorite">__MSG_favorite__</span></h1>
       <div class="input_container">
         <div class="type_container">
           <select id="favourite_type_selector" class="selector">
@@ -130,27 +133,29 @@
 
 
     <div class="Statistics tab_container" style="display: none;">
-      <h1 style="text-align: center;">Statistics</h1>
+      <h1 style="text-align: center;"><span data-i18n="innertext;statistics">__MSG_statistics__</span></h1>
       <div class="input_container">
         <div class="data-input-section">
-          <label for="data_input">Input Data:</label>
+          <label for="data_input"><span data-i18n="innertext;input_data">__MSG_input_data__</span><span>:</span></label>
           <input type="text" id="data_input" class="stats-input" placeholder="e.g., 1.2, 3.4, 5.6, 7.8" />
-          <button id="calculate_statistics_btn" class="viewAllButton">Calculate</button>
+          <button id="calculate_statistics_btn" class="viewAllButton"><span data-i18n="innertext;calculate">__MSG_calculate__</span></button>
         </div>
 
         <div class="stats-results">
           <div class="stats-item">
-            <div class="stats-label">Mean:</div>
+            <div class="stats-label">
+              <span data-i18n="innertext;mean">__MSG_mean__</span><span>:</span></div>
             <input type="text" id="mean_output" class="stats-output" readonly>
           </div>
 
           <div class="stats-item">
-            <div class="stats-label">Standard Deviation:</div>
+            <div class="stats-label">
+              <span data-i18n="innertext;standard_deviation">__MSG_standard_deviation__</span><span>:</span></div>
             <input type="text" id="std_output" class="stats-output" readonly>
           </div>
 
           <div class="stats-item">
-            <div class="stats-label">Entropy:</div>
+            <div class="stats-label"><span data-i18n="innertext;entropy">__MSG_entropy__</span><span>:</span></div>
             <input type="text" id="entropy_output" class="stats-output" readonly>
           </div>
         </div>
@@ -158,57 +163,53 @@
     </div>
 
     <div class="Health tab_container" style="display: none;">
-      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Input</h1>
+      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;"><span data-i18n="innertext;input">__MSG_input__</span></h1>
 
       <div class="input_subcontainer" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
         <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Weight (kg)</label>
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;"><span data-i18n="innertext;weight_kg">__MSG_weight_kg__</span></label>
           <input type="number" id="weight" class="quantity" step="0.1"
             style="width: 80px; display: block; margin: 0 auto;">
         </div>
         <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Height (cm)</label>
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;"><span data-i18n="innertext;height_cm">__MSG_height_cm__</span></label>
           <input type="number" id="height" class="quantity" step="0.1"
             style="width: 80px; display: block; margin: 0 auto;">
         </div>
         <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Age</label>
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;"><span data-i18n="innertext;age">__MSG_age__</span></label>
           <input type="number" id="age" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
         </div>
         <div class="input_field" style="flex: 1; margin: 0 5px; text-align: center;">
-          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;">Gender</label>
+          <label style="font-weight: bold; font-size: 16px; display: block; margin-bottom: 15px;" ><span data-i18n="innertext;gender">__MSG_gender__</span></label>
           <select id="gender" class="quantity" style="width: 80px; display: block; margin: 0 auto;">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="male" data-i18n="innertext;gender_male">__MSG_gender_male__</option>
+            <option value="female" data-i18n="innertext;gender_female">__MSG__gender_female__</option>
           </select>
         </div>
       </div>
 
-      <h1 style="text-align: center; margin: 20px 0; font-weight: bold;">Health Index</h1>
+      <h1 style="text-align: center; margin: 20px 0; font-weight: bold;"><span data-i18n="innertext;health_index">__MSG_health_index__</span></h1>
 
 
       <div class="result_container" style="display: flex; justify-content: center;">
         <div class="result_subcontainer">
           <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-            <label style="font-weight: bold; font-size: 16px;"> BMI:</label>
+            <label style="font-weight: bold; font-size: 16px;"> <span data-i18n="innertext;bmi">__MSG_bmi__</span><span>:</span></label>
             <span id="bmi-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-            <span style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 18.5 - 24.9)</span>
+            <span style="color: #666; font-size: 16px; margin-left: 15px;" data-i18n="innertext;normal_bmi"></span>
           </div>
           <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-            <label style="font-weight: bold; font-size: 16px;"> BMR:</label>
+            <label style="font-weight: bold; font-size: 16px;"> <span data-i18n="innertext;bmr">BMR</span><span>:</span></label>
             <span id="bmr-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 1500-2000
-              kcal/day)</span>
-            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal:
-              1200-1600 kcal/day)</span>
+            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;" data-i18n="innertext;normal_bmr_male">__MSG_normal_bmr_female__</span>
+            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;" data-i18n="innertext;normal_bmr_female">__MSG_normal_bmr_female__</span>
           </div>
           <div class="result_field" style="text-align: center; margin-bottom: 10px;">
-            <label style="font-weight: bold; font-size: 16px;"> TDEE:</label>
+            <label style="font-weight: bold; font-size: 16px;"> <span data-i18n="innertext;tdee">__MSG_tdee__</span><span>:</span></label>
             <span id="tdee-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;">(Normal: 2000-2750
-              kcal/day)</span>
-            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;">(Normal:
-              1600-2200 kcal/day)</span>
+            <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;" data-i18n="innertext;normal_tdee_male">__MSG_normal_tdee__</span>
+            <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;" data-i18n="innertext;normal_tdee_female"="">__MSG_normal_tdee_female__</span>
           </div>
         </div>
       </div>
@@ -288,15 +289,15 @@
   </div> 
 -->
     <div class="Calculator tab_container" style="display: none;">
-      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
+      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;"><span data-i18n="innertext;mathematical_converstions">Mathematical Conversions</span></h1>
 
       <!-- Conversion Category Dropdown -->
       <div style="display: flex; justify-content: center; margin-bottom: 20px;">
         <select id="conversion-category"
           style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-          <option value="areaVolume">Area and Volume</option>
-          <option value="speed">Speed</option>
-          <option value="engineering">Engineering</option>
+          <option value="areaVolume" data-i18n="innertext;area_volume">__MSG_area_volume__</option>
+          <option value="speed" data-i18n="innertext;speed">__MSG_speed__</option>
+          <option value="engineering" data-i18n="innertext;engineering">__MSG_engineering__</option>
         </select>
       </div>
 
@@ -314,7 +315,7 @@
           style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
         <button id="convert-btn"
           style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-          Convert
+          <span data-i18n="innertext;convert">__MSG_convert__</span>
         </button>
       </div>
 
@@ -322,11 +323,11 @@
       <div class="result-container" style="display: flex; justify-content: center; margin-top: 20px;">
         <div class="result-subcontainer" style="text-align: center;">
           <div class="result-field" style="margin-bottom: 10px;">
-            <label style="font-weight: bold; font-size: 16px;">Result:</label>
+            <label style="font-weight: bold; font-size: 16px;"><span data-i18n="innertext;result">__MSG_result__</span><span>:</span></label>
             <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
           </div>
           <div class="unit-range" style="color: #666; font-size: 14px; margin-top: 10px;">
-            (Ensure correct units are used for conversion)
+            <span data-i18n="innertext;units_warning">__MSG_units_warning__</span>
           </div>
         </div>
       </div>
@@ -335,30 +336,31 @@
     <div class="Translate tab_container" style="display: none;">
       <textarea id="inputText" placeholder="Enter text here"></textarea>
       <select id="currentLanguage">
-        <option value="English">English</option>
-        <option value="Spanish">Spanish</option>
-        <option value="French">French</option>
-        <option value="German">German</option>
+        <option value="English" data-i18n="innertext;lang_en">__MSG_lang_en__</option>
+        <option value="Spanish" data-i18n="innertext;lang_es">__MSG_lang_es__</option>
+        <option value="French" data-i18n="innertext;lang_fr">__MSG_lang_fr__</option>
+        <option value="German" data-i18n="innertext;lang_de">__MSG_lang_de__</option>
       </select>
-      <button id="translateButton">Translate</button>
+      <button id="translateButton"><span data-i18n="innertext;translate">__MSG_translate__</span></button>
       <div id="result"></div>
       <select id="targetLanguage">
-        <option value="English">English</option>
-        <option value="Spanish">Spanish</option>
-        <option value="French">French</option>
-        <option value="German">German</option>
+        <option value="English" data-i18n="innertext;lang_en">__MSG_lang_en__</option>
+        <option value="Spanish" data-i18n="innertext;lang_es">__MSG_lang_es__</option>
+        <option value="French" data-i18n="innertext;lang_fr">__MSG_lang_fr__</option>
+        <option value="German" data-i18n="innertext;lang_de">__MSG_lang_de__</option>
       </select>
     </div>
     <script src="../conversions/compound_conversion.js"></script>
 
     <div class="colorblind-settings">
-      <label for="colorblind-mode">Select Colorblind Mode:</label>
+      <label for="colorblind-mode"><span data-i18n="innertext;colorblind_mode_option">__MSG_colorblind_mode_option__</span><span>:</span></label>
       <select id="colorblind-mode">
-        <option value="default">Default</option>
-        <option value="red-green">Red-Green Colorblind</option>
-        <option value="blue-yellow">Blue-Yellow Colorblind</option>
-        <option value="total-colorblind">Total Colorblind</option>
+        <option value="default" data-i18n="innertext;default">__MSG_default__</option>
+        <option value="red-green" data-i18n="innertext;red_green_colorblind">__MSG_red_green_colorblind__</option>
+        <option value="blue-yellow" data-i18n="innertext;blue_yellow_colorblind">__MSG_blue_yellow_colorblind__</option>
+        <option value="total-colorblind" data-i18n="innertext;total_colorblind">__MSG_total_colorblind__</option>
       </select>
     </div>
   </div>
 </body>
+</html>
