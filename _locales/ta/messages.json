@@ -194,5 +194,21 @@
     "total_colorblind": {
         "message": "முழு நிறக்குறைபாடு",
         "description": "முழு நிறக்குறைபாடு விருப்பம்"
+    },
+    "enter_value": {
+        "message": "மதிப்பை உள்ளிடவும்",
+        "description": "Enter value placeholder"
+    },
+    "enter_text": {
+        "message": "இங்கு உரை உள்ளிடவும்",
+        "description": "Enter text here placeholder"
+    },
+    "unit_value": {
+        "message": "அலகு மதிப்பு",
+        "description": "Unit value placeholder"
+    },
+    "unit_name": {
+        "message": "அலகு பெயர்",
+        "description": "Unit Name placeholder"
     }
 }

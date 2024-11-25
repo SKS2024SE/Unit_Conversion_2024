@@ -194,5 +194,21 @@
     "total_colorblind": {
         "message": "Daltónico Total",
         "description": "Total colorblind option"
+    },
+    "enter_value": {
+        "message": "Ingresa el valor",
+        "description": "Enter value placeholder"
+    },
+    "enter_text": {
+        "message": "Ingresa el texto aquí",
+        "description": "Enter text here placeholder"
+    },
+    "unit_value": {
+        "message": "Valor de la unidad",
+        "description": "Unit value placeholder"
+    },
+    "unit_name": {
+        "message": "Nombre de la unidad",
+        "description": "Unit Name placeholder"
     }
 }

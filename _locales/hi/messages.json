@@ -194,5 +194,21 @@
     "total_colorblind": {
         "message": "पूर्ण कलरब्लाइंड",
         "description": "Total colorblind option"
+    },
+    "enter_value": {
+        "message": "मान दर्ज करें",
+        "description": "Enter value placeholder"
+    },
+    "enter_text": {
+        "message": "यहां पाठ दर्ज करें",
+        "description": "Enter text here placeholder"
+    },
+    "unit_value": {
+        "message": "यूनिट मान",
+        "description": "Unit value placeholder"
+    },
+    "unit_name": {
+        "message": "यूनिट नाम",
+        "description": "Unit Name placeholder"
     }
 }
