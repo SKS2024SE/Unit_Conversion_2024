@@ -99,7 +99,7 @@ $(function () {
     // let type = $(this).attr("id")
     $('.tablinks').removeClass('selected')
     $(this).addClass('selected')
-    const tab = $(this).children().html()
+    const tab = $(this).data('tab')
     $('.tab_container').hide()
     $(`.${tab}`).show()
   })

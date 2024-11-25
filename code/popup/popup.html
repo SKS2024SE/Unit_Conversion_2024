@@ -27,13 +27,13 @@
   <script src="../main_scripts/dark-mode.js"></script>
 
   <div class="Tab">
-    <button class="tablinks selected"><span data-i18n="innertext;converter">__MSG_converter__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;custom">__MSG_custom__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;favorite">__MSG_favorite__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;statistics">__MSG_statistics__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;health">__MSG_health__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;calculator">__MSG_calculator__</span></button>
-    <button class="tablinks"><span data-i18n="innertext;translate">__MSG_translate__</span></button>
+    <button class="tablinks selected" data-tab="Convertor"><span data-i18n="innertext;converter">__MSG_converter__</span></button>
+    <button class="tablinks" data-tab="Custom"><span data-i18n="innertext;custom">__MSG_custom__</span></button>
+    <button class="tablinks" data-tab="Favourite"><span data-i18n="innertext;favorite">__MSG_favorite__</span></button>
+    <button class="tablinks" data-tab="Statistics"><span data-i18n="innertext;statistics">__MSG_statistics__</span></button>
+    <button class="tablinks" data-tab="Health"><span data-i18n="innertext;health">__MSG_health__</span></button>
+    <button class="tablinks" data-tab="Calculator"><span data-i18n="innertext;calculator">__MSG_calculator__</span></button>
+    <button class="tablinks" data-tab="Translate"><span data-i18n="innertext;translate">__MSG_translate__</span></button>
   </div>
 
   <div class="main_container">
@@ -86,7 +86,7 @@
           <div style="font-size: 30px;margin-top: 10px;">=</div>
           <div class="unit">
 
-            <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="Unit value" />
+            <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="__MSG_unit_value__" data-i18n="placeholder;unit_value" />
             </div>
           </div>
 
@@ -96,7 +96,7 @@
 
         <div class="unit_container" style="justify-content: center;">
           <div class="unit"> <input style="font-size: 16px;" type="text" id="custom_unit_name_left"
-              placeholder="Unit Name" /></div>
+              placeholder="__MSG_unit_name__" data-i18n="placeholder;unit_name" /></div>
         </div>
         <div style="text-align: center;">
           <button id="custom_unit_add" class="viewAllButton"><span data-i18n="innertext;add">__MSG_add__</span></button>
@@ -311,7 +311,7 @@
 
       <!-- Input and Convert Button -->
       <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-        <input type="number" id="input-value" placeholder="Enter value"
+        <input type="number" id="input-value" placeholder="__MSG_enter_value__" data-i18n="placeholder;enter_value"
           style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
         <button id="convert-btn"
           style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
@@ -334,7 +334,7 @@
     </div>
 
     <div class="Translate tab_container" style="display: none;">
-      <textarea id="inputText" placeholder="Enter text here"></textarea>
+      <textarea id="inputText" placeholder="__MSG_enter_text__" data-i18n="placeholder;enter_text"></textarea>
       <select id="currentLanguage">
         <option value="English" data-i18n="innertext;lang_en">__MSG_lang_en__</option>
         <option value="Spanish" data-i18n="innertext;lang_es">__MSG_lang_es__</option>
