@@ -1,39 +1,3 @@
-// document.getElementById('convert-btn').addEventListener('click', () => {
-//     const type = document.getElementById('conversion-type').value;
-//     const value = parseFloat(document.getElementById('input-value').value);
-//     const resultElement = document.getElementById('result');
-  
-//     if (isNaN(value)) {
-//       resultElement.textContent = "Please enter a valid number.";
-//       return;
-//     }
-  
-//     let result;
-//     switch (type) {
-//       case 'kmh_to_ms':
-//         result = `${value} km/h = ${(value / 3.6).toFixed(3)} m/s`;
-//         break;
-//       case 'ms_to_kmh':
-//         result = `${value} m/s = ${(value * 3.6).toFixed(3)} km/h`;
-//         break;
-//       case 'f_to_c':
-//         result = `${value}°F = ${((value - 32) * 5 / 9).toFixed(2)}°C`;
-//         break;
-//       case 'c_to_f':
-//         result = `${value}°C = ${(value * 9 / 5 + 32).toFixed(2)}°F`;
-//         break;
-//       case 'mph_to_kmh':
-//         result = `${value} mph = ${(value * 1.60934).toFixed(3)} km/h`;
-//         break;
-//       default:
-//         result = "Invalid conversion type.";
-//     }
-  
-//     resultElement.textContent = result;
-//   });
-
-// Area & Volume Conversions
-// Conversion data
 const areaVolumeConversions = {
     "sqm_to_sqft": (value) => value * 10.7639,
     "sqft_to_sqm": (value) => value / 10.7639,

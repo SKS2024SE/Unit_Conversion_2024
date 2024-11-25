@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speech Recognition Test</title>
+</head>
+<body>
+  <h1>Speech Recognition Test</h1>
+  <input type="text" id="input-field" placeholder="Speak here..." />
+  <button id="mic-button">🎤 Start Voice Input</button>
+
+  <script>
+    function startSpeechRecognition(inputElementId) {
+      console.log("Initializing SpeechRecognition...");
+      
+      if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
+        console.error('SpeechRecognition API is not supported in this browser.');
+        alert('SpeechRecognition is not supported in your browser. Please try Google Chrome.');
+        return;
+      }
+
+      const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+
+      recognition.onstart = () => {
+        console.log('Voice input started...');
+      };
+
+      recognition.onspeechend = () => {
+        console.log('Voice input ended.');
+        recognition.stop();
+      };
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        console.log(`Recognized text: ${transcript}`);
+        document.getElementById(inputElementId).value = transcript;
+      };
+
+      recognition.onerror = (event) => {
+        console.error('Error recognizing speech:', event.error);
+        alert(`Error recognizing speech: ${event.error}`);
+      };
+
+      recognition.start();
+    }
+
+    document.getElementById('mic-button').addEventListener('click', () => {
+      startSpeechRecognition('input-field');
+    });
+  </script>
+</body>
+</html>

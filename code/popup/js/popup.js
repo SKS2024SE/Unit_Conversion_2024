@@ -84,11 +84,11 @@ $(function () {
   const unitSelectorLeftVal = $('#left_input')
   const unitSelectorRightVal = $('#right_input')
 
-  unitSelectorLeftVal.on('change', function () {
+  unitSelectorLeftVal.on('input', function () {
     getConversion('left')
   })
 
-  unitSelectorRightVal.on('change', function () {
+  unitSelectorRightVal.on('input', function () {
     getConversion('right')
   })
   populateUnit()
