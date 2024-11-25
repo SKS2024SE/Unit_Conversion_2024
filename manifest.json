@@ -3,6 +3,7 @@
 	"name": "Unit Convert Selection",
 	"version": "1.0.0",
 	"description": "Do unit conversion conveniently at the current selected text",
+	"default_locale": "en",
 	"action": {
 		"default_icon": {
 			"16": "assets/logos/units_logo16.png",
