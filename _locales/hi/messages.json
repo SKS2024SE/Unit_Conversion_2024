@@ -1,0 +1,198 @@
+{
+    "title": {
+        "message": "कनवर्टर - पॉपअप",
+        "description": "The title of the converter extension"
+    },
+    "dark_mode": {
+        "message": "डार्क मोड",
+        "description": "Button that provides Dark Mode option"
+    },
+    "custom": {
+        "message": "कस्टम",
+        "description": "Provides custom convertions"
+    },
+    "converter": {
+        "message": "कनवर्टर",
+        "description": "The converter tab title"
+    },
+    "favorite": {
+        "message": "पसंदीदा",
+        "description": "Favorite convertions are provided in this tab"
+    },
+    "statistics": {
+        "message": "आँकड़े",
+        "description": "Statistics such as Mean, Median and, Mode are provided in this tab"
+    },
+    "health": {
+        "message": "स्वास्थ्य",
+        "description": "BMI support is provided in this tab"
+    },
+    "calculator": {
+        "message": "कैलकुलेटर",
+        "description": "Can calculate basic arithmetic and convertions"
+    },
+    "translate": {
+        "message": "अनुवाद",
+        "description": "Can translate one language into another language"
+    },
+    "type_selection": {
+        "message": "कृपया प्रकार चुनें",
+        "description": "Mentions the type of convertion that has to be selected"
+    },
+    "add": {
+        "message": "जोड़ें",
+        "description": "To add two items"
+    },
+    "delete": {
+        "message": "हटाएं",
+        "description": "To delete items"
+    },
+    "input_data": {
+        "message": "इनपुट डेटा",
+        "description": "Getting input for some arbitrary data"
+    },
+    "calculate": {
+        "message": "गणना करें",
+        "description": "To calculate result"
+    },
+    "mean": {
+        "message": "औसत",
+        "description": "Mean of the list of items provided"
+    },
+    "standard_deviation": {
+        "message": "मानक विचलन",
+        "description": "Standard deviation for the list of items provided"
+    },
+    "entropy": {
+        "message": "एन्ट्रॉपी",
+        "description": "Entropy for the list of items provided"
+    },
+    "input": {
+        "message": "इनपुट",
+        "description": "Input for Health Statistics"
+    },
+    "weight_kg": {
+        "message": "वजन (किग्रा)",
+        "description": "Weight of the person for calculating BMI"
+    },
+    "height_cm": {
+        "message": "ऊंचाई (सेमी)",
+        "description": "Height of the person for calculating BMI"
+    },
+    "age": {
+        "message": "आयु",
+        "description": "Age of the person for calculating BMI"
+    },
+    "gender": {
+        "message": "लिंग",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_male": {
+        "message": "पुरुष",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_female": {
+        "message": "महिला",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "health_index": {
+        "message": "स्वास्थ्य सूचकांक",
+        "description": "Health index after calculating BMI"
+    },
+    "bmi": {
+        "message": "बीएमआई",
+        "description": "BMI data"
+    },
+    "normal_bmi": {
+        "message": "(सामान्य: 18.5 - 24.9)",
+        "description": "Range for normal BMI"
+    },
+    "bmr": {
+        "message": "बीएमआर",
+        "description": "BMR"
+    },
+    "normal_bmr_male": {
+        "message": "(सामान्य: 1500-2000 किलो कैलोरी/दिन)",
+        "description": "Normal BMR range for males"
+    },
+    "normal_bmr_female": {
+        "message": "(सामान्य: 1500-2000 किलो कैलोरी/दिन)",
+        "description": "Normal BMR range for females"
+    },
+    "tdee": {
+        "message": "टीडीईई",
+        "description": "TDEE"
+    },
+    "normal_tdee_male": {
+        "message": "(सामान्य: 2000-2750 किलो कैलोरी/दिन)",
+        "description": "Normal TDEE range for male"
+    },
+    "normal_tdee_female": {
+        "message": "(सामान्य: 1600-2200 किलो कैलोरी/दिन)",
+        "description": "Normal TDEE range for female"
+    },
+    "mathematical_converstions": {
+        "message": "गणितीय रूपांतरण",
+        "description": "Mathematical converstions"
+    },
+    "area_volume": {
+        "message": "क्षेत्रफल और आयतन",
+        "description": "Area and volume for mathematical converstions"
+    },
+    "speed": {
+        "message": "गति",
+        "description": "Speed converstion"
+    },
+    "engineering": {
+        "message": "इंजीनियरिंग",
+        "description": "Engineering calculations"
+    },
+    "convert": {
+        "message": "रूपांतरित करें",
+        "description": "Convert in calculations"
+    },
+    "result": {
+        "message": "परिणाम",
+        "description": "Result for calculations"
+    },
+    "units_warning": {
+        "message": "(सुनिश्चित करें कि रूपांतरण के लिए सही इकाइयों का उपयोग किया गया है)",
+        "description": "Ensure correct units are used for conversion"
+    },
+    "lang_en": {
+        "message": "अंग्रेज़ी",
+        "description": "Language English"
+    },
+    "lang_es": {
+        "message": "स्पेनिश",
+        "description": "Language Spanish"
+    },
+    "lang_fr": {
+        "message": "फ्रेंच",
+        "description": "Language French"
+    },
+    "lang_de": {
+        "message": "जर्मन",
+        "description": "Language German"
+    },
+    "colorblind_mode_option": {
+        "message": "कलरब्लाइंड मोड चुनें",
+        "description": "Select an appropriate color blind mode"
+    },
+    "default": {
+        "message": "डिफ़ॉल्ट",
+        "description": "Default value"
+    },
+    "red_green_colorblind": {
+        "message": "लाल-हरा कलरब्लाइंड",
+        "description": "Red green colorblind option"
+    },
+    "blue_yellow_colorblind": {
+        "message": "नीला-पीला कलरब्लाइंड",
+        "description": "Blue yellow colorblind option"
+    },
+    "total_colorblind": {
+        "message": "पूर्ण कलरब्लाइंड",
+        "description": "Total colorblind option"
+    }
+}

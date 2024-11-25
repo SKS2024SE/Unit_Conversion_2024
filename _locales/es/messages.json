@@ -1,0 +1,198 @@
+{
+    "title" : {
+        "message" : "Convertidor - Ventana emergente",
+        "description": "The title of the converter extension"
+    },
+    "dark_mode": {
+        "message" : "Modo Oscuro",
+        "description" : "Button that provides Dark Mode option"
+    },
+    "custom": {
+        "message" : "Personalizado",
+        "description" : "Provides custom convertions"
+    },
+    "converter" : {
+        "message" : "Convertidor",
+        "description" : "The converter tab title" 
+    },
+    "favorite": {
+        "message" : "Favorito",
+        "description": "Favorite convertions are provided in this tab"
+    },
+    "statistics": {
+        "message" : "Estadísticas",
+        "description": "Statistics such as Mean, Median and, Mode are provided in this tab"
+    },
+    "health": {
+        "message" : "Salud",
+        "description": "BMI support is provided in this tab"
+    },
+    "calculator": {
+        "message" : "Calculadora",
+        "description": "Can calculate basic arithmetic and convertions"
+    },
+    "translate": {
+        "message" : "Traducir",
+        "description": "Can translate one language into another language"
+    },
+    "type_selection": {
+        "message": "Por favor seleccione el tipo",
+        "description": "Mentions the type of convertion that has to be selected"
+    },
+    "add": {
+        "message" : "Agregar",
+        "description": "To add two items"
+    },
+    "delete": {
+        "message" : "Eliminar",
+        "description": "To delete items"
+    },
+    "input_data": {
+        "message": "Datos de entrada",
+        "description": "Getting input for some arbitrary data"
+    },
+    "calculate": {
+        "message": "Calcular",
+        "description": "To calculate result"
+    },
+    "mean": {
+        "message": "Media",
+        "description": "Mean of the list of items provided"
+    },
+    "standard_deviation": {
+        "message": "Desviación Estándar",
+        "description": "Standard deviation for the list of items provided"
+    },
+    "entropy": {
+        "message": "Entropía",
+        "description": "Entropy for the list of items provided"
+    },
+    "input": {
+        "message": "Entrada",
+        "description": "Input for Health Statistics"
+    },
+    "weight_kg": {
+        "message": "Peso (kgs)",
+        "description": "Weight of the person for calculating BMI"
+    },
+    "height_cm": {
+        "message": "Altura (cm)",
+        "description": "Height of the person for calculating BMI"
+    },
+    "age": {
+        "message": "Edad",
+        "description": "Age of the person for calculating BMI"
+    },
+    "gender": {
+        "message": "Género",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_male": {
+        "message": "Hombre",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_female": {
+        "message": "Mujer",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "health_index": {
+        "message": "Índice de Salud",
+        "description": "Health index after calculating BMI"
+    },
+    "bmi": {
+        "message": "IMC",
+        "description": "BMI data"
+    },
+    "normal_bmi": {
+        "message": "(Normal: 18.5 - 24.9)",
+        "description": "Range for normal BMI"
+    },
+    "bmr": {
+        "message": "TMB",
+        "description": "BMR"
+    },
+    "normal_bmr_male": {
+        "message": "(Normal: 1500-2000 kcal/día)",
+        "description": "Normal BMR range for males"
+    },
+    "normal_bmr_female": {
+        "message": "(Normal: 1500-2000 kcal/día)",
+        "description": "Normal BMR range for females"
+    },
+    "tdee": {
+        "message": "TDEE",
+        "description": "TDEE"
+    },
+    "normal_tdee_male": {
+        "message": "(Normal: 2000-2750 kcal/día)",
+        "description": "Normal TDEE range for male"
+    },
+    "normal_tdee_female": {
+        "message": "(Normal: 1600-2200 kcal/día)",
+        "description": "Normal TDEE range for female"
+    },
+    "mathematical_converstions": {
+        "message": "Conversiones Matemáticas",
+        "description": "Mathematical converstions"
+    },
+    "area_volume": {
+        "message": "Área y Volumen",
+        "description": "Area and volume for mathematical converstions"
+    },
+    "speed": {
+        "message": "Velocidad",
+        "description": "Speed converstion"
+    },
+    "engineering": {
+        "message": "Ingeniería",
+        "description": "Engineering calculations"
+    },
+    "convert": {
+        "message": "Convertir",
+        "description": "Convert in calculations"
+    },
+    "result": {
+        "message": "Resultado",
+        "description": "Result for calculations"
+    },
+    "units_warning": {
+        "message": "(Asegúrese de usar unidades correctas para la conversión)",
+        "description": "Ensure correct units are used for conversion"
+    },
+    "lang_en": {
+        "message": "Inglés",
+        "description": "Language English"
+    },
+    "lang_es": {
+        "message": "Español",
+        "description": "Language Spanish"
+    },
+    "lang_fr": {
+        "message": "Francés",
+        "description": "Language French"
+    },
+    "lang_de": {
+        "message": "Alemán",
+        "description": "Language German"
+    },
+    "colorblind_mode_option": {
+        "message": "Seleccionar Modo para Daltónicos",
+        "description": "Select an appropriate color blind mode"
+    },
+    "default": {
+        "message": "Predeterminado",
+        "description": "Default value"
+    },
+    "red_green_colorblind": {
+        "message": "Daltónico Rojo-Verde",
+        "description": "Red green colorblind option"
+    },
+    "blue_yellow_colorblind": {
+        "message": "Daltónico Azul-Amarillo",
+        "description": "Blue yellow colorblind option"
+    },
+    "total_colorblind": {
+        "message": "Daltónico Total",
+        "description": "Total colorblind option"
+    }
+}

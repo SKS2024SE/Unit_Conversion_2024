@@ -1,0 +1,198 @@
+{
+    "title": {
+        "message": "மாற்றி - பாப்அப்",
+        "description": "மாற்றி நீட்டிப்பின் தலைப்பு"
+    },
+    "dark_mode": {
+        "message": "இருட்டு நிலை",
+        "description": "இருட்டு நிலை தேர்வு பொத்தான்"
+    },
+    "custom": {
+        "message": "சொந்த",
+        "description": "சொந்த மாற்றங்கள் வழங்குகிறது"
+    },
+    "converter": {
+        "message": "மாற்றி",
+        "description": "மாற்றி தாவல் தலைப்பு"
+    },
+    "favorite": {
+        "message": "விருப்பமானது",
+        "description": "விருப்பமான மாற்றங்கள் இதில் வழங்கப்பட்டுள்ளன"
+    },
+    "statistics": {
+        "message": "புள்ளிவிவரங்கள்",
+        "description": "சராசரி, நடுக்கோடு, பயன்முறை போன்ற புள்ளிவிவரங்கள் இதில் வழங்கப்பட்டுள்ளன"
+    },
+    "health": {
+        "message": "ஆரோக்கியம்",
+        "description": "BMI ஆதரவு இதில் வழங்கப்பட்டுள்ளது"
+    },
+    "calculator": {
+        "message": "கணக்கீட்டுப் பொருள்",
+        "description": "அடிப்படை கணிதம் மற்றும் மாற்றங்கள் செய்ய முடியும்"
+    },
+    "translate": {
+        "message": "மொழிபெயர்",
+        "description": "ஒரு மொழியிலிருந்து மற்றொரு மொழிக்கு மொழிபெயர்க்க முடியும்"
+    },
+    "type_selection": {
+        "message": "தயவுசெய்து வகையைத் தேர்ந்தெடுக்கவும்",
+        "description": "தேர்ந்தெடுக்க வேண்டிய மாற்ற வகையை குறிப்பிடுகிறது"
+    },
+    "add": {
+        "message": "சேர்க்கவும்",
+        "description": "இரண்டு உருப்படிகளைச் சேர்க்க"
+    },
+    "delete": {
+        "message": "அழிக்கவும்",
+        "description": "உருப்படிகளை அழிக்க"
+    },
+    "input_data": {
+        "message": "உள்ளீட்டு தரவு",
+        "description": "சில சராசரி தரவுகளைப் பெறுகிறது"
+    },
+    "calculate": {
+        "message": "கணக்கிடவும்",
+        "description": "முடிவுகளை கணக்கிட"
+    },
+    "mean": {
+        "message": "சராசரி",
+        "description": "வழங்கப்பட்ட உருப்படிகளின் சராசரி"
+    },
+    "standard_deviation": {
+        "message": "சராசரி சறுக்கல்",
+        "description": "வழங்கப்பட்ட உருப்படிகளின் சராசரி சறுக்கல்"
+    },
+    "entropy": {
+        "message": "என்ட்ரோபி",
+        "description": "வழங்கப்பட்ட உருப்படிகளின் என்ட்ரோபி"
+    },
+    "input": {
+        "message": "உள்ளீடு",
+        "description": "ஆரோக்கிய புள்ளிவிவரங்களுக்கு உள்ளீடு"
+    },
+    "weight_kg": {
+        "message": "எடை (கிலோகிராம்)",
+        "description": "BMI கணக்கிட நபரின் எடை"
+    },
+    "height_cm": {
+        "message": "உயரம் (செ.மீ)",
+        "description": "BMI கணக்கிட நபரின் உயரம்"
+    },
+    "age": {
+        "message": "வயது",
+        "description": "BMI கணக்கிட நபரின் வயது"
+    },
+    "gender": {
+        "message": "பாலினம்",
+        "description": "BMI கணக்கிட நபரின் பாலினம்"
+    },
+    "gender_male": {
+        "message": "ஆண்",
+        "description": "BMI கணக்கிட ஆண் பாலினம்"
+    },
+    "gender_female": {
+        "message": "பெண்",
+        "description": "BMI கணக்கிட பெண் பாலினம்"
+    },
+    "health_index": {
+        "message": "ஆரோக்கிய குறியீடு",
+        "description": "BMI கணக்கிட ஆரோக்கிய குறியீடு"
+    },
+    "bmi": {
+        "message": "BMI",
+        "description": "BMI தரவு"
+    },
+    "normal_bmi": {
+        "message": "(சாதாரணம்: 18.5 - 24.9)",
+        "description": "சாதாரண BMI வரம்பு"
+    },
+    "bmr": {
+        "message": "BMR",
+        "description": "BMR"
+    },
+    "normal_bmr_male": {
+        "message": "(சாதாரணம்: 1500-2000 கிலோகலோரிகள்/நாள்)",
+        "description": "ஆண் BMR இன் சாதாரண வரம்பு"
+    },
+    "normal_bmr_female": {
+        "message": "(சாதாரணம்: 1500-2000 கிலோகலோரிகள்/நாள்)",
+        "description": "பெண் BMR இன் சாதாரண வரம்பு"
+    },
+    "tdee": {
+        "message": "TDEE",
+        "description": "TDEE"
+    },
+    "normal_tdee_male": {
+        "message": "(சாதாரணம்: 2000-2750 கிலோகலோரிகள்/நாள்)",
+        "description": "ஆண் TDEE இன் சாதாரண வரம்பு"
+    },
+    "normal_tdee_female": {
+        "message": "(சாதாரணம்: 1600-2200 கிலோகலோரிகள்/நாள்)",
+        "description": "பெண் TDEE இன் சாதாரண வரம்பு"
+    },
+    "mathematical_converstions": {
+        "message": "கணித மாற்றங்கள்",
+        "description": "கணித மாற்றங்கள்"
+    },
+    "area_volume": {
+        "message": "பரப்பு மற்றும் அளவு",
+        "description": "பரப்பு மற்றும் அளவு மாற்றங்கள்"
+    },
+    "speed": {
+        "message": "வேகம்",
+        "description": "வேக மாற்றம்"
+    },
+    "engineering": {
+        "message": "பொறியியல்",
+        "description": "பொறியியல் கணக்கீடுகள்"
+    },
+    "convert": {
+        "message": "மாற்றவும்",
+        "description": "கணக்கீடுகளில் மாற்றவும்"
+    },
+    "result": {
+        "message": "முடிவு",
+        "description": "கணக்கீட்டின் முடிவு"
+    },
+    "units_warning": {
+        "message": "(மாற்றத்திற்கு சரியான அலகுகளை பயன்படுத்த உறுதிசெய்யவும்)",
+        "description": "மாற்றத்திற்கு சரியான அலகுகளை பயன்படுத்த உறுதிசெய்யவும்"
+    },
+    "lang_en": {
+        "message": "ஆங்கிலம்",
+        "description": "மொழி ஆங்கிலம்"
+    },
+    "lang_es": {
+        "message": "ஸ்பானிஷ்",
+        "description": "மொழி ஸ்பானிஷ்"
+    },
+    "lang_fr": {
+        "message": "பிரஞ்சு",
+        "description": "மொழி பிரஞ்சு"
+    },
+    "lang_de": {
+        "message": "ஜெர்மன்",
+        "description": "மொழி ஜெர்மன்"
+    },
+    "colorblind_mode_option": {
+        "message": "நிறக்குறைபாடு நிலை தேர்வு",
+        "description": "தகுந்த நிறக்குறைபாடு நிலையை தேர்வு செய்யவும்"
+    },
+    "default": {
+        "message": "இயல்புநிலை",
+        "description": "இயல்புநிலை மதிப்பு"
+    },
+    "red_green_colorblind": {
+        "message": "சிவப்பு-பச்சை நிறக்குறைபாடு",
+        "description": "சிவப்பு-பச்சை நிறக்குறைபாடு விருப்பம்"
+    },
+    "blue_yellow_colorblind": {
+        "message": "நீலம்-மஞ்சள் நிறக்குறைபாடு",
+        "description": "நீலம்-மஞ்சள் நிறக்குறைபாடு விருப்பம்"
+    },
+    "total_colorblind": {
+        "message": "முழு நிறக்குறைபாடு",
+        "description": "முழு நிறக்குறைபாடு விருப்பம்"
+    }
+}
