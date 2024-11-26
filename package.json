@@ -25,9 +25,9 @@
     "util": "^0.12.5"
   },
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha",
+    "test": "mocha test/*.test.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-     "cypress": "cypress open"
+    "cypress": "cypress open"
   },
   "repository": {
     "type": "git",
