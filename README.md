@@ -60,18 +60,24 @@ git clone [repository_url]
 ### Step 3: Enable developer settings
 - Enable developer settings if it is not enabled
 
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/1dc7c2ee-cbaa-4308-a3dd-937062d035e8)
+  ![image](https://github.com/user-attachments/assets/87998121-b5f6-44c8-92e6-96563c977da8)
+
 
 ### Step 4: Unpack the cloned repository
 - Choose Load Unpacked
+
+  ![image](https://github.com/user-attachments/assets/77fc8156-d5d6-4aba-8c86-59a471c1acf6)
+
 - Select the repository folder that was cloned in the first step
 
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/6b1264db-9a24-4846-8c19-e1e925582e1c)
+  ![image](https://github.com/user-attachments/assets/656fbd42-b1d8-444a-8986-966288c0761e)
+
 
 ### Step 5: Check the extension added
 - The extension will now be added to the Chrome
 
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/d8364664-7236-42ee-aa27-ada0c4ce3fcf)
+  ![image](https://github.com/user-attachments/assets/4d004eb2-18a4-45a2-b545-ce1424c5e51d)
+
 
 ### Step 6: Test the extension
 - Displays the most relevant converted unit first
