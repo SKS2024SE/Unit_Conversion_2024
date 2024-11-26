@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize the conversion type dropdown on page load
   updateConversionTypes();
 });
+
 module.exports = {
   areaVolumeConversions,
   speedConversions,
