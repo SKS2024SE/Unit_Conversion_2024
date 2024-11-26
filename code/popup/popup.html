@@ -19,9 +19,6 @@
 </head>
 
 <body>
-  <button id="darkModeToggle">🌙Dark Mode</button>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
-  <script src="../main_scripts/dark-mode.js"></script> -->
   <svg display="none">
     <symbol id="light" viewBox="0 0 24 24">
       <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -60,9 +57,6 @@
     <span class="switch__sr" data-i18n="innertext;dark_mode">__MSG_dark_mode__</span>
   </label>
 
-
-
-
   <div class="Tab">
     <button class="tablinks selected" data-tab="Convertor"><span data-i18n="innertext;converter">__MSG_converter__</span></button>
     <button class="tablinks" data-tab="Custom"><span data-i18n="innertext;custom">__MSG_custom__</span></button>
@@ -84,17 +78,25 @@
         <div class="unit_container">
           <div class="unit">
                 <input type="number" id="left_input" name="right_input" value="0" />
-                <button id="voice_input_left" style="margin-left: 10px;">🎤</button>
-                <select id="unit_selector_left" class="selector" name="left_unit">
+                 <select id="unit_selector_left" class="selector" name="left_unit">
                   <option  data-i18n="innertext;type_selection">__MSG_type_selection__</option>
                 </select>
+                <button id="voice_input_left" style="margin-left: 10px;">🎤</button>
               </div>
               <script src="../main_scripts/voice_input_output.js"></script>
-             
-        </div>
+				 
+						
+              <div style="font-size: 30px;">=</div>
+              <div class="unit">
+                <input type="number" id="right_input" name="left_input" value="0" />
+                <!-- <button id="voice_input_right" style="margin-left: 10px;">🎤</button> -->
+                <select id="unit_selector_right" class="selector" name="right_unit">
+                  <option>Please Select Type</option>
+                </select>
+              </div>
+			    </div>
       </div>
     </div>
-
 
     <div class="Custom tab_container" style="display: none;">
       <h1 style="text-align: center;"><span data-i18n="innertext;custom">__MSG_custom__</span></h1>
@@ -104,8 +106,7 @@
         </select>
       </div>
 
-
-      <div>
+     <div>
         <div class="unit_container">
           <div style="font-size: 16px;
             text-align: center;
@@ -119,37 +120,33 @@
             </div>
 
 
-            <div style="font-size: 30px;margin-top: 10px;">=</div>
-
-            <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="__MSG_unit_value__" data-i18n="placeholder;unit_value" />
-            </div>
-          </div>
-
-
+	       <div style="font-size: 30px;margin-top: 10px;">=</div>
+			<div class="unit_container">		
+            <div><input style="font-size: 16px;" type="text" id="custom_unit_value_right" placeholder="__MSG_unit_value__" data-i18n="placeholder;unit_value" /> </div>
+													  
+      </div>
         </div>
-
-
         <div class="unit_container" style="justify-content: center;">
-          <div class="unit"> <input style="font-size: 16px;" type="text" id="custom_unit_name_left"
+          <div class="unit"> 
+			<input style="font-size: 16px;" type="text" id="custom_unit_name_left"
               placeholder="__MSG_unit_name__" data-i18n="placeholder;unit_name" /></div>
         </div>
         <div style="text-align: center;">
           <button id="custom_unit_add" class="viewAllButton"><span data-i18n="innertext;add">__MSG_add__</span></button>
-        </div>
+		</div>
       </div>
       <br />
       <hr />
       <br />
       <div>
         <div class="type_container">
-          <select id="delete_type_selector" class="selector">
-          </select>
+          <select id="delete_type_selector" class="selector"> </select>
         </div>
-        <div style="text-align: center;">
+		      <div style="text-align: center;">
           <button id="custom_unit_delete" class="viewAllButton"><span data-i18n="innertext;delete">__MSG_delete__</span></button>
-        </div>
+				  </div>
       </div>
-    </div>
+    </div></div>
 
     <div class="Favourite tab_container" style="display: none;">
       <h1 style="text-align: center;"><span data-i18n="innertext;favorite">__MSG_favorite__</span></h1>
@@ -162,6 +159,7 @@
           <ul id="units_container">
 
           </ul>
+					
         </div>
       </div>
     </div>
@@ -172,7 +170,12 @@
       <div class="input_container">
         <div class="data-input-section">
           <label for="data_input"><span data-i18n="innertext;input_data">__MSG_input_data__</span><span>:</span></label>
+				   
           <input type="text" id="data_input" class="stats-input" placeholder="e.g., 1.2, 3.4, 5.6, 7.8" />
+							  
+								 
+													
+			  
           <button id="calculate_statistics_btn" class="viewAllButton"><span data-i18n="innertext;calculate">__MSG_calculate__</span></button>
         </div>
 
@@ -186,7 +189,18 @@
           <div class="stats-item">
             <div class="stats-label">
               <span data-i18n="innertext;standard_deviation">__MSG_standard_deviation__</span><span>:</span></div>
+																				
+				  
+			
+									
+																
+																			   
+				  
+			
+									
+													 
             <input type="text" id="std_output" class="stats-output" readonly>
+				  
           </div>
 
           <div class="stats-item">
@@ -245,84 +259,13 @@
             <span id="tdee-result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
             <span class="male-range" style="color: #666; font-size: 16px; margin-left: 15px;" data-i18n="innertext;normal_tdee_male">__MSG_normal_tdee__</span>
             <span class="female-range" style="color: #666; font-size: 16px; margin-left: 15px; display: none;" data-i18n="innertext;normal_tdee_female"="">__MSG_normal_tdee_female__</span>
+					   
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="Calculator tab_container" style="display: none;">
-        <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Mathematical Conversions</h1>
-        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-            <select id="conversion-type" style="padding: 8px 12px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc;">
-                <option value="kmh_to_ms">km/h to m/s</option>
-                <option value="ms_to_kmh">m/s to km/h</option>
-                <option value="f_to_c">Fahrenheit to Celsius</option>
-                <option value="c_to_f">Celsius to Fahrenheit</option>
-                <option value="mph_to_kmh">mph to km/h</option>
-            </select>
-        </div>
-        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-            <input 
-                type="number" 
-                id="input-value" 
-                placeholder="Enter value" 
-                style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; width: 200px;">
-            <button 
-                id="convert-btn" 
-                style="padding: 10px 20px; background-color: #0078d7; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
-                Convert
-            </button>
-        </div>
-        <div class="result_container" style="display: flex; justify-content: center; margin-top: 20px;">
-            <div class="result_subcontainer" style="text-align: center;">
-                <div class="result_field" style="margin-bottom: 10px;">
-                    <label style="font-weight: bold; font-size: 16px;">Result:</label>
-                    <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-                </div>
-                <div class="unit_range" style="color: #666; font-size: 14px; margin-top: 10px;">
-                    (Make sure units are correct for conversion)
-                </div>
-            </div>
-        </div>
-        <script src="../conversions/compound_conversion.js"></script>
-    </div> -->
-    <!-- <div class="Calculator tab_container" style="display: block;">
-      <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;">Compound Conversions</h1>
-  
-    
-      <select id="conversion-category">
-          <option value="areaVolume">Area and Volume</option>
-          <option value="speed">Speed</option>
-          <option value="engineering">Engineering</option>
-      </select>
-  
-      Conversion Type Dropdown
-      <div style="margin-top: 15px;">
-          <select id="conversion-type">
-              Default values loaded by JS
-          </select>
-      </div>
-  
-      Input and Convert Button
-      <div style="margin-top: 15px;">
-          <input type="number" id="input-value" placeholder="Enter value" style="padding: 8px; width: 200px;">
-          <button id="convert-btn" style="padding: 8px 20px; margin-left: 10px; background-color: var(--highlight-color); color: #fff; border: none; cursor: pointer;">Convert</button>
-      </div>
-  
-      Result Display
-      <div class="result_container" style="display: flex; justify-content: center; margin-top: 20px;">
-        <div class="result_subcontainer" style="text-align: center;">
-            <div class="result_field" style="margin-bottom: 10px;">
-                <label style="font-weight: bold; font-size: 16px;">Result:</label>
-                <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
-            </div>
-            <div class="unit_range" style="color: #666; font-size: 14px; margin-top: 10px;">
-                (Make sure units are correct for conversion)
-            </div>
-        </div>
-    </div>
-  </div> 
--->
+
     <div class="Calculator tab_container" style="display: none;">
       <h1 style="text-align: center; margin-bottom: 20px; font-weight: bold;"><span data-i18n="innertext;mathematical_converstions">Mathematical Conversions</span></h1>
 
@@ -358,7 +301,7 @@
       <div class="result-container" style="display: flex; justify-content: center; margin-top: 20px;">
         <div class="result-subcontainer" style="text-align: center;">
           <div class="result-field" style="margin-bottom: 10px;">
-            <label style="font-weight: bold; font-size: 16px;"><span data-i18n="innertext;result">__MSG_result__</span><span>:</span></label>
+            <label style="font-weight: bold; font-size: 16px;"><span data-i18n="innertext;result">_MSG_result_</span><span>:</span></label>
             <span id="result" class="result" style="font-size: 16px; margin-left: 10px;">-</span>
           </div>
           <div class="unit-range" style="color: #666; font-size: 14px; margin-top: 10px;">
@@ -367,16 +310,17 @@
         </div>
       </div>
     </div>
-
+    <script src="../conversions/compound_conversion.js"></script>
+    
     <div class="Translate tab_container" style="display: none;">
-      <textarea id="inputText" placeholder="__MSG_enter_text__" data-i18n="placeholder;enter_text"></textarea>
+      <textarea id="inputText" placeholder="_MSG_enter_text_" data-i18n="placeholder;enter_text"></textarea>
       <select id="currentLanguage">
         <option value="English" data-i18n="innertext;lang_en">__MSG_lang_en__</option>
         <option value="Spanish" data-i18n="innertext;lang_es">__MSG_lang_es__</option>
         <option value="French" data-i18n="innertext;lang_fr">__MSG_lang_fr__</option>
         <option value="German" data-i18n="innertext;lang_de">__MSG_lang_de__</option>
       </select>
-      <button id="translateButton"><span data-i18n="innertext;translate">__MSG_translate__</span></button>
+      <button id="translateButton"><span data-i18n="innertext;translate">_MSG_translate_</span></button>
       <div id="result"></div>
       <select id="targetLanguage">
         <option value="English" data-i18n="innertext;lang_en">__MSG_lang_en__</option>
@@ -385,7 +329,7 @@
         <option value="German" data-i18n="innertext;lang_de">__MSG_lang_de__</option>
       </select>
     </div>
-    <script src="../conversions/compound_conversion.js"></script>
+   
 
     <div class="colorblind-settings">
       <label for="colorblind-mode"><span data-i18n="innertext;colorblind_mode_option">__MSG_colorblind_mode_option__</span><span>:</span></label>
@@ -399,3 +343,5 @@
   </div>
 </body>
 </html>
+
+   

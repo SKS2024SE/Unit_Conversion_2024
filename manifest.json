@@ -32,7 +32,8 @@
 				"code/conversions/Temperature.js",
 				"code/conversions/Currency.js",
 				"code/conversions/TimeZone.js",
-				"code/conversions/translator.js"
+				"code/conversions/translator.js",
+				"code/conversions/compound_conversion.js"
 			],
 			"run_at": "document_end",
 			"all_frames": true,
