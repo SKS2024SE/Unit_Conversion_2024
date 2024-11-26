@@ -31,7 +31,7 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          npx nyc --reporter=lcov --reporter=text mocha  
+          npm test  
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
