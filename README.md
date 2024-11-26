@@ -82,12 +82,13 @@ git clone [repository_url]
 ### Step 6: Test the extension
 - Displays the most relevant converted unit first
 
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/a3593a02-0882-4af6-92ba-89192e824de2)
+  ![image](https://github.com/user-attachments/assets/25b03cf0-6391-4cc9-a74f-6aaef4be60f7)
 
 
 - Click on view all button to view all of the converted units for that metric
 
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/bb08278c-de80-4d0a-9293-203b12e5bd48)
+  ![image](https://github.com/user-attachments/assets/113d673f-3d09-485b-97da-d9aec1b9d4c5)
+
 
 ## Popup Features for the user
 To access the popup feature the user has to click on the extension icon in the top right corner where the user further finds and selects the extension "Unit Convert Selection"
@@ -96,12 +97,21 @@ To access the popup feature the user has to click on the extension icon in the t
 - This feature allows the user to directly convert units without the need to select any particular text on the browser. This helps save trouble and effort for the user
 - The user selects the conversion he requires from the given standard conversions
 
-  ![image](https://github.com/user-attachments/assets/d5bf4715-46b9-4d7d-afeb-511365b96190)
+  ![image](https://github.com/user-attachments/assets/ad034f87-b9d3-497c-96b9-f1e020f996cb)
+
+  ![image](https://github.com/user-attachments/assets/f36a001e-bae9-4a0e-94fc-70d0f2817aa3)
+
+- Dark Mode:
+
+  ![image](https://github.com/user-attachments/assets/f1e468ab-2c54-42d2-b378-9b5886d18937)
 
 
 - The user can select and convert any unit to the required unit without any restrictions. This direct method allows the user to be quick
 
-  ![image](https://github.com/user-attachments/assets/b9576171-e2f2-47c5-adde-359951068e4c)
+  
+
+  
+
 
 
 ### 2. Customized Conversions
