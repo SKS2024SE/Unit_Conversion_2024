@@ -1,0 +1,214 @@
+{
+    "title" : {
+        "message" : "Convertor - popup",
+        "description": "The title of the converter extension"
+    },
+    "dark_mode": {
+        "message" : "Dark Mode",
+        "description" : "Button that provides Dark Mode option"
+    },
+    "custom": {
+        "message" : "Custom",
+        "description" : "Provides custom convertions"
+    },
+    "converter" : {
+        "message" : "Converter",
+        "description" : "The converter tab title" 
+    },
+    "favorite": {
+        "message" : "Favorite",
+        "description" : "Favorite convertions are provided in this tab"
+    },
+    "statistics": {
+        "message" : "Statistics",
+        "description": "Statistics such as Mean, Median and, Mode are provided in this tab"
+    },
+    "health": {
+        "message" : "Health",
+        "description" : "BMI support is provided in this tab"
+    },
+    "calculator": {
+        "message" : "Calculator",
+        "description": "Can calculate basic arithmetic and convertions"
+    },
+    "translate": {
+        "message" : "Translate",
+        "description": "Can translate one language into another language"
+    },
+    "type_selection": {
+        "message": "Please Select Type",
+        "description": "Mentions the type of convertion that has to be selected"
+    },
+    "add": {
+        "message" : "Add",
+        "description": "To add two items"
+    },
+    "delete": {
+        "message": "Delete",
+        "description": "To delete items"
+    },
+    "input_data": {
+        "message": "Input data",
+        "description": "Getting input for some arbitrary data"
+    },
+    "calculate": {
+        "message": "Calculate",
+        "description": "To calculate result"
+    },
+    "mean": {
+        "message": "Mean",
+        "description": "Mean of the list of items provided"
+    },
+    "standard_deviation": {
+        "message": "Standard Deviation",
+        "description": "Standard deviation for the list of items provided"
+    },
+    "entropy": {
+        "message": "Entropy",
+        "description": "Entropy for the list of items provided"
+    },
+    "input": {
+        "message": "Input",
+        "description": "Input for Health Statistics"
+    },
+    "weight_kg": {
+        "message": "Weight (kgs)",
+        "description": "Weight of the person for calculating BMI"
+    },
+    "height_cm": {
+        "message": "Height (cm)",
+        "description": "Height of the person for calculating BMI"
+    },
+    "age": {
+        "message": "Age",
+        "description": "Age of the person for calculating BMI"
+    },
+    "gender": {
+        "message": "Gender",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_male": {
+        "message": "Male",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "gender_female": {
+        "message": "Female",
+        "description": "Gender of the person for calculating BMI"
+    },
+    "health_index": {
+        "message": "Health Index",
+        "description": "Health index after calculating BMI"
+    },
+    "bmi": {
+        "message": "BMI",
+        "description": "BMI data"
+    },
+    "normal_bmi": {
+        "message": "(Normal: 18.5 - 24.9)",
+        "description": "Range for normal BMI"
+    },
+    "bmr": {
+        "message": "BMR",
+        "description": "BMR"
+    },
+    "normal_bmr_male": {
+        "message": "(Normal: 1500-2000 kcal/day)",
+        "description": "Normal BMR range for males"
+    },
+    "normal_bmr_female": {
+        "message": "(Normal: 1500-2000 kcal/day)",
+        "description": "Normal BMR range for females"
+    },
+    "tdee": {
+        "message": "TDEE",
+        "description": "TDEE"
+    },
+    "normal_tdee_male": {
+        "message": "(Normal: 2000-2750 kcal/day)",
+        "description": "Normal TDEE range for male"
+    },
+    "normal_tdee_female": {
+        "message": "(Normal: 1600-2200 kcal/day)",
+        "description": "Normal TDEE range for female"
+    },
+    "mathematical_converstions": {
+        "message": "Mathematical Converstions",
+        "description": "Mathematical converstions"
+    },
+    "area_volume": {
+        "message": "Area and Volume",
+        "description": "Area and volume for mathematical converstions"
+    },
+    "speed": {
+        "message": "Speed",
+        "description": "Speed converstion"
+    },
+    "engineering": {
+        "message": "Engineering",
+        "description": "Engineering calculations"
+    },
+    "convert": {
+        "message": "Convert",
+        "description": "Convert in calculations"
+    },
+    "result": {
+        "message": "Result",
+        "description": "Result for calculations"
+    },
+    "units_warning": {
+        "message": "(Ensure correct units are used for conversion)",
+        "description": "Ensure correct units are used for conversion"
+    },
+    "lang_en": {
+        "message": "English",
+        "description": "Language English"
+    },
+    "lang_es": {
+        "message": "Spanish",
+        "description": "Language Spanish"
+    },
+    "lang_fr": {
+        "message": "French",
+        "description": "Language French"
+    },
+    "lang_de": {
+        "message": "German",
+        "description": "Language German"
+    },
+    "colorblind_mode_option": {
+        "message": "Select Colorblind Mode",
+        "description": "Select an appropriate color blind mode"
+    },
+    "default": {
+        "message": "Default",
+        "description": "Default value"
+    },
+    "red_green_colorblind": {
+        "message": "Red-Green Colorblind",
+        "description": "Red green colorblind option"
+    },
+    "blue_yellow_colorblind": {
+        "message": "Blue-Yellow Colorblind",
+        "description": "Blue yellow colorblind option"
+    },
+    "total_colorblind": {
+        "message": "Total Colorblind",
+        "description": "Total colorblind option"
+    },
+    "enter_value": {
+        "message": "Enter Value",
+        "description": "Enter value placeholder"
+    },
+    "enter_text": {
+        "message" : "Enter Text Here",
+        "description": "Enter text here placeholder"
+    },
+    "unit_value": {
+        "message": "Unit Value",
+        "description": "Unit value placeholder"
+    },
+    "unit_name": {
+        "message": "Unit Name",
+        "description": "Unit Name placeholder"
+    }
+}

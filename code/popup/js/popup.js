@@ -37,6 +37,28 @@ $(function () {
         text: type.charAt(0).toUpperCase() + type.slice(1) // Capitalize the first letter
       }))
     }
+
+    // Rewrite i18n strings 
+    let i18nElements = document.querySelectorAll('[data-i18n]')
+    if( i18nElements ) {
+      i18nElements.forEach((element) => {
+        let i18nFn = element.dataset.i18n.split(';');
+        let textReplace = chrome.i18n.getMessage(i18nFn[1]);
+
+        if(!textReplace) {
+          return;
+        }
+
+        switch(i18nFn[0]) {
+          case 'innertext' : 
+            element.innerText=textReplace;
+            break;
+          case 'placeholder' : 
+            element.placeholder=textReplace;
+            break;
+        }
+      })
+    }
   })
 
   $('#custom_unit_add').on('click', function (e) {
@@ -77,7 +99,7 @@ $(function () {
     // let type = $(this).attr("id")
     $('.tablinks').removeClass('selected')
     $(this).addClass('selected')
-    const tab = $(this).children().html()
+    const tab = $(this).data('tab')
     $('.tab_container').hide()
     $(`.${tab}`).show()
   })
