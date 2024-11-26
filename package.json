@@ -32,10 +32,17 @@
     "cypress": "cypress open",
     "upload-coverage": "codecov"
     },
+"nyc": {
+  "reporter": ["text", "lcov"],
+  "all": true,
+  "extension": [".js"],
+  "include": ["src//*.js"], 
+  "exclude": ["test//*.js"]
+},
   
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/510-s-Mickey/units_converter_extension.git"
+    "url": "git+https://github.com/SKS2024SE/Unit_Conversion_2024.git"
   },
   "keywords": [
     "units_convert",
