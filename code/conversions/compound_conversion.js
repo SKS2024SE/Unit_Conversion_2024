@@ -51,6 +51,12 @@ const areaVolumeConversions = {
       "watt_to_hp": "Watts to Horsepower",
     },
   };
+
+  module.exports = {
+    areaVolumeConversions,
+    speedConversions,
+    engineeringConversions,
+  };
   
   document.addEventListener("DOMContentLoaded", () => {
     const categoryDropdown = document.getElementById("conversion-category");
