@@ -12,7 +12,7 @@ if (SpeechRecognition) {
 
     if (voiceButton) {
       // Add click event listener for the voice button
-      voiceButton.addEventListener('cli ck', () => {
+      voiceButton.addEventListener('click', () => {
         // Request microphone access and start recognition
         navigator.mediaDevices.getUserMedia({ audio: true })
           .then(() => {
