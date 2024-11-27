@@ -15,9 +15,9 @@ An extension that effortlessly converts your selected values into popular units,
 <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/shyamal31/units_converter_extension/maintainability)  -->
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14010246.svg)](https://doi.org/10.5281/zenodo.14010246)
 
-**Click on the image below to view the video**
+**Click on the below to view the video**
 
-[![Alt text](https://i.ytimg.com/vi/W4USPH2sBJw/hqdefault.jpg)](https://youtu.be/RT2PIYw7BCk)
+[Play!!!](https://youtu.be/8tz6wISzIgk)
 
 ## Use Cases
 
