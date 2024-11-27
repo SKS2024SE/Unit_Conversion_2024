@@ -49,7 +49,7 @@ An extension that effortlessly converts your selected values into popular units,
 
 ## Installation Guide
 
-### Step 1: Clone [this](https://github.com/shyamal31/units_converter_extension) Repository
+### Step 1: Clone [this](https://github.com/SKS2024SE/Unit_Conversion_2024) Repository
 
 ```
 git clone [repository_url]
