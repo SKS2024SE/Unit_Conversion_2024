@@ -13,7 +13,7 @@ An extension that effortlessly converts your selected values into popular units,
 <!-- [![Build Status](https://travis-ci.com/NCSU-S/units_converter_extension.svg?branch=master)](https://travis-ci.com/NCSU-S/units_converter_extension) -->
 ![Codecov](https://codecov.io/gh/510-s-Mickey/units_converter_extension/branch/master/graph/badge.svg)
 <!-- [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/shyamal31/units_converter_extension/maintainability)  -->
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14010246.svg)](https://doi.org/10.5281/zenodo.14010246)
+[![DOI](https://zenodo.org/badge/879040333.svg)](https://doi.org/10.5281/zenodo.14027352)
 
 **Click on the below to view the video**
 
