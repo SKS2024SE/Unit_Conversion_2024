@@ -117,44 +117,41 @@ To access the popup feature the user has to click on the extension icon in the t
 ### 2. Customized Conversions
 
 - This feature allows the user to create his own customized unit conversion for his personal use and purposes. This includes all the conversion that are not standard but used as a jargon by people.
-- This is the example taken where 1 meter is taken as 3 subs
+- This example shows 1 meter is equal to 3 scale units
 
-  ![image](https://github.com/user-attachments/assets/b4cdf44b-0236-4860-aede-cf512f95e8e6)
-
-- Testing whether the customized conversion works or not
-
-  ![image](https://github.com/shyamal31/units_converter_extension/assets/85347670/681416b3-a41d-4dcf-b864-7eca0303b7e8)
+  ![image](https://github.com/user-attachments/assets/650887e8-b18e-44d0-9ec5-39816b276632)
 
 - Since the customized version of conversion keeps changing it is important to allow the user to alter the units. So a feature is added that allows user to delete his customized conversion.
 
-  ![image](https://github.com/user-attachments/assets/8035d45f-58e5-4267-b981-4eaf0398a83e)
-
-### 3. Favorites 
+ ### 3. Favorites 
 - This feature allows users to select a particular conversion unit and place it in favorites as the units in favorites are shown at the top. This feature is useful when the user wastes time in finding his desired converted unit from a pool of large units.
 - Here we select pint and gallon as favorites in volume converions. 
 
-  ![image](https://github.com/user-attachments/assets/8035d45f-58e5-4267-b981-4eaf0398a83e)
+![image](https://github.com/user-attachments/assets/f76d48da-1e7e-495b-9e7d-e1cf46836cdf)
 
-- So now all the volume conversions will have pint and gallon at the top of the display
-
-  ![image](https://github.com/user-attachments/assets/4e54e867-9889-41ec-b0ea-e0783e74467c)
 
 ### 4. Statistics
 - This feature allows the user to calculate mean, standard deviation, and entropy after entering a data set.
 
-  ![image](https://github.com/user-attachments/assets/0fc774ab-ff80-4b2d-830c-2ca6899bb93f)
-
+  ![image](https://github.com/user-attachments/assets/fe8e7419-7908-4b5c-9517-ef2ce3d87c65)
 
 ### 5. Health Reports
 - This feature allows the user to calculate BMI, BMR, and TDEE based on height, weight, age, and gender.
 
-  ![image](https://github.com/user-attachments/assets/ad71e74c-382e-488b-bb19-d2a6f27d1213)
+ ![image](https://github.com/user-attachments/assets/79d81f83-d2c2-469d-90c2-0332b8926aef)
 
-### 6. Colorblind Mode
+### 6. Compound Conversions
+- This feature allows a custom tab for calculating compounds, allowing users to perform specific calculations tailored to their needs.
+
+![image](https://github.com/user-attachments/assets/d8886a73-6c00-4fd3-aa63-e70801040852)
+
+![image](https://github.com/user-attachments/assets/af0bf37f-20da-423f-a607-92ee7b6b4c85)
+
+
+### 7. Colorblind Mode
 - This feature allows the user to enable colorblind mode for accessibility.
-
-  ![image](https://github.com/user-attachments/assets/fb30a6c6-1cbf-41c3-a24e-c07826303e4e)
-
+  
+![image](https://github.com/user-attachments/assets/216f5189-34a4-4eb5-9efe-cf1c03a20284)
 
 
 ## Style Checker and Analyzer
