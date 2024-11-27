@@ -262,10 +262,15 @@ Think about the case when you shopping on Amazon. When you want to purchase Dumb
 If you encounter any issues during any stage of extension use or you encounter any development-related issues, feel free to reach out to our contact our support team at [unit.convertor.help@gmail.com](mailto:houzhichaohzc@gmail.com).
 
 
-# Contributors
+# Triad Triumph 
+[CSC 510 - Software Engineering 2024](https://txt.github.io/se24fall/index.html) <br>
+We are a group of 3 whose names start with S - Success. Hence, Triad Triumph - just like the alliteration in our names.
 
-Tingxiang Ji
+## Contributors 
+[![GitHub User's stars](https://img.shields.io/github/stars/Ks-Weasley?logo=github&label=Krithika%20Swaminathan)](https://github.com/Ks-Weasley) <br>
+[![GitHub User's stars](https://img.shields.io/github/stars/SandhiyaS24?logo=github&label=Sandhiya%20Shunmugavel)](https://github.com/SandhiyaS24) <br>
+[![GitHub User's stars](https://img.shields.io/github/stars/Sanjaeyss?logo=github&label=Sanjaey%20Shunmuga%20Sundaram)](https://github.com/Sanjaeyss)
 
-Hui Sun
+## Moto
+Learning . Unlearning . Unleasing
 
-Zhichao Hou
