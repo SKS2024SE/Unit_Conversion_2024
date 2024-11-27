@@ -32,9 +32,14 @@ An extension that effortlessly converts your selected values into popular units,
 - Convert litres to gallons when you are calculating the volume for liquid items online
 - Convert TB to GB when you are buying data storage devices
 - Convert Time from a given time zone to another (PST to EST)
-- Automatically calculate mean, standard deviation, and entropy after entering a data set (New Feature)
-- Calculate BMI, BMR, and TDEE based on height, weight, age, and gender (New Feature)
-- Enable colorblind mode for accessibility (New Feature)
+- Automatically calculate mean, standard deviation, and entropy after entering a data set 
+- Calculate BMI, BMR, and TDEE based on height, weight, age, and gender 
+- Enable colorblind mode for accessibility
+- Voice Input For Selected Features (New Feature)
+- UI-Enhancements - Theme change and Dynamic Results(New Feature)
+- Custom Tab (New Feature)
+- Compound Calculations (New Feature)
+- Multilingual Support (New Feature)
 
   ## Technologies we used:
  - ![Javascript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript)
